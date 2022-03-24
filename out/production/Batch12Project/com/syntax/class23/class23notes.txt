@@ -1,0 +1,60 @@
+Method overloading in java:
+When same method name exists in a class but with different number of parameters or different data types of parameters of
+different sequence of parameters.
+
+Advantages of method overloading:
+   Flexibility of having same name methods in a class
+   End user gets the benefit that he does not need to remember different method names
+
+Rules:
+   We overload the constructors
+   we can overload the static methods as well
+   we can overload the main method as well
+
+
+   Rules for static methods:
+    static methods cant access instance fileds directly
+    instance methods can access instance as well static fields directly
+    / can we print both variables in one method when one isstatic andother is not
+     // we cant access the instance fields directly iside static method
+                // we cant use instance fields with static methods
+                // we cant access the isntace fileds directly insdie static methods
+                         //   System.out.println(name + noOfLegs);
+
+     Method overriding:
+     1) method overriding happens when we have same name methods in the parent class and in the child class
+     2) we can only override a method if we have inheritance relationship between two classes
+     3) we can't override the private methods because they wont participate in inheritance
+     4) we cant override the constructors because they dont participate in inheritance
+
+Two types of polymorphism:
+        1- Compile time polymorphism //Also called "Static polymorphism"
+            * *can be achieve through "Method overloading"
+        2- Run Time polymorphism//Also called "Dynamic polymorphism".
+            **can be achieve through "Method Overriding".
+
+
+OOPS Main pillars:
+
+1) Inheritance - taking the parent class and using it in child class, code re-usability
+2) Polymorphism -- less code, dynamic behavior
+3) Abstraction
+4) Encapsulation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+Method overriding in Java:
+    method overriding happens when w have same name methods in parent and child class
+
+    Benefits of Method Overriding:
+    1) flexibility if we dont like something from the parent class we can override it and provide our own
+    implementation
+    2) same method can act differently depending upon the object on which we call it.
+
+ Rules:
+ 1) without inheritance method overriding is not possible
+ 2) method signature should be same in parent class and child class
+ 3) if something does not participate in inheritance, we  cant override it like constructors and private methods
+ 4) we can increase visibility in the child classes but we cant decrease it for example we cant go from default
+ or protected to public, but we  an do reverse
+ 5) we cant override a static method but we can redeclare it. for example main method cant be overriden as it is
+ static
+ 6) we cant have different return type in the child class it must be same as of parent class
+
+
+
+
+
+if we have same method name with different parameters its called overloading.
+
+
+Two types of polymorphism:
+        1- Compile time polymorphism //Also called "Static polymorphism"
+            * *can be achieve through "Method overloading"
+        2- Run Time polymorphism//Also called "Dynamic polymorphism".
+            **can be achieve through "Method Overriding".
+
+
+OOPS Main pillars:
+
+1) Inheritance - taking the parent class and using it in child class, code re-usability
+2) Polymorphism -- less code, dynamic behavior
+3) Abstraction --
+4) Encapsulation
+
+
+Abstractions- is the process of separating ideas from their actions
+- shows only important things to the user, and hides the internal details
+- abtraction is a process of hiding the implentation dtails fomr hte user, only functionality will be visible to the user
+- abtraction lets you focus on what object does isntead of how it does it
+
+ADVANTAGES  OF ABSTRACTIONS -
+reduces the complexity
+improves the maintainable of the system
+
+2 type of classes
+abtract class - class that has keyword abstract, we cant create an object of this class
+- cant call the object of the abstract class because some methods in abstrract class dont have a method
+-  to restrict calling of the methods that dont have a body
+- if we have at least one abstact method then the whole class needs to have abract keyword in the class
+
+contrcte class - regular class that you can create an object of
+
+abtract --
+class taht is decraed abstrect we cant intesntiaate or create an object of
+
+every abstract class participates in inheritance
+abstract classes defenitions shoud lnot be made as final becasue abtract classes always participate in inheritnace
+
+
+SECOND WAY TO ACHIEVE POLYMORPHISM USING INTERFACES
+-- all the methods inside an interface which do not have a body are abstract and are public
+-- we cant not create an object of intercace
+all the variables inside interface are public static and final
+- constructors dre not allowed in the interface, the purpose of constructors is to initianlize instatce variable
+

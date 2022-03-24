@@ -1,0 +1,63 @@
+Access modifiers
+- allow us to control the visibitity of class members( fields, methods, constructors)
+ and classes itself in java
+
+ there are 4 access levels and there are 3 keywords that we use to define these access level
+ the forth level is applied when we dont use any access modifier keywords
+ - levels from most restricted to less restricted are
+ -private --> default --> protected --> public
+-- default means visible inside one package, protected - between packages
+rules-
+1) we should always prefer the private field midifier for fields, because the fields contain data,
+and the methods of your class might use the data to perform some tasks
+if we dont perform sanity checks before setting the values to these fileds our classes and methods
+might misbehave also the access of the data should be restrictred so that not everyone can access
+the data.
+2) we cant use access modifiers with local variables
+
+make fields private(99%times) and define methods that are public (99 %time) or depending ur requirements
+
+====================================
+CONSTRUCTORS
+Construction i java allows us to set the values of the fields of a class
+
+//RULE #1 constructor dont have return types
+    // RULE #2   name of the constructor should be same as name as the class
+    // there are 2 types of constructiors - no argumement constructor and parameterized const
+    // the no arguemnt constructor is used to create objects
+    // no argument const. write some important lines of code that you want to execute whe nthe object
+    // is created
+    // you might want to fetch some infor from internet or from your hard disk to give initial values
+// // the constructor that is provided automatically when we dont create any constructors in a class is called
+       default
+
+  // you might want to execute some code to set up the resources for your calss like opening the
+        // connections to database, checking if interent is available or not
+        // there is still a need for no argument constr
+
+RULES OF CONSTRUCTORS
+1- The name of the constructor should be the same as that of the calss name
+2- a constructor cannot be declared as final static, synchronized or abstract.
+3- it connot have an explicit return type
+4- a constructor can have an access modifier to control the access
+
+3 TYPES OF CONSTRUCTOR IN JAVA-
+1- DEFAULT CONSTRUCTOR - if we dont create a constructor, java creates a default constructor with null, 0 values
+2- NO- NO ARGUMENT CONSTRUCTOR - same as default constructor, but its not empty, it has a syso message
+3- PARAMETERIZED CONSTRUCTORS - constructor with parameters such as string int so on.
+
+- constructor cant be STATIC- BECAUSE WE ARE ASSIGNNING DIFFERENT VALUES EACH TIME-
+USING STATIC WE CAN ONLY STORE ONE VALUE IN THE VARIABLE
+constructor cant be static because all the object would be same values for the variables
+- whats the point of constuctor if all values aare the same( there is no point )
+ -- 99% of time constructors will be private, if not then they will hava default access modifier
+
+
+main purpose of constructors is to initialize fields
+main purose of methods is to solve any problems that needs separate piece of code
+
+constructors are used to write logic inside the block of code too
+
+this keyword:
+it is a reserved keywrod in java that we can use to refere to instaince variables methods or constructors of a class
+1) this keyword is used to distinguish instance variables with local variables

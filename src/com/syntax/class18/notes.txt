@@ -1,0 +1,24 @@
+ACCESS MODIFIERS
+
+Access modifiers are keywords in java defines from where a certain variable, method,
+class can be accessed.
+
+there are 4 types of acces in java that we can define using three keywords
+1) private
+2) protected
+3) public
+4) default is not a keyword its automatically applied
+
+types of access are 4
+1) private 2) default ( appied when no keyword is used)  3) public 4) protected
+private access (keyword is private) ; ( most restricted access )
+when we use the private keyword with any of the variables, methods or classes these
+can only be accessed within that class.
+
+default access  ( applied when we dont use any keywords)
+these things can only be accessed from the same package
+
+protected access ( we use the protected class)
+when protected access is applied class members ( variables methods etc )
+from other packages but only in the classes that participate in inheritanace
+

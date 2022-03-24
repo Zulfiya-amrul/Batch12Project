@@ -1,0 +1,9 @@
+METHODS CAN
+- CAN PASS ARGUMENTS
+- HAVE RETURN TYPE
+- can have conditions
+- can have parameters
+- passing arguments - paramenters- can have parameters
+
+STRING
+ method chaining - when you call multiple methods in a single line to perform a particular operation

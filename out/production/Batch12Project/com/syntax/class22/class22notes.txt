@@ -1,0 +1,138 @@
+Inheritance in Java:
+ints a mechanism in java through which a child class gets the properties and methods from a parent class
+benefits:
+1) saves time to code
+2) code duplication is reduced
+3) execution time is faster
+
+disadvantages:
+Classes are tightly coupled if we change something in parent class it is also changed in the
+child class.
+Types of inheritance;
+ there are four types of inheritance but java only supports 3 of them
+ 1- Single
+ 2- Hierarchical
+ 3- Multilevel
+ 4- Multiple (not supported in java)
+
+ Single inheritance :
+ we have only one child and one parent class. only 2 classes participate in inheritance
+
+class Parent {
+
+ }
+
+ class Child extends Parent {
+
+ }
+
+ Hierarchical
+    - in Hierarchical inheritane we have single parent class and mulitple child clases
+
+    class parent {
+
+    }
+    class child1 extends parent {
+
+    }
+    class child2 extends parent {
+
+        }
+
+    Multilevel :
+    we have multiple levels of inheritance for example if we have classes A B C
+    class C will be inherited from B and B will be inherited from A
+
+    class A {
+
+    }
+Class B extends A {
+
+}
+Class C etends B {
+
+}
+======================
+
+super keyword:
+super keyword is like the " this " keyword it refers to the parent class object
+for example we can access the fields method or constructor of parent class inside
+the child class suing this keyword.
+ /*
+    because constructor from parent class dont participate in inheritance
+    we need to create a matching constructor in the child classes as well
+    we can use super () to call the construtor from paretn class so that we dont have to repreat the code
+
+     */
+
+     super keyword
+     super is keyword like "this" but refers to the parent class object,
+     we can use the super keyword in 3 different ways
+     VARIABLES- METHODS- TO ACCESS THE CONSTRUCTORS OF PARENT CLASS
+
+     1) to access the super class variables if we have same named variables in super class and base class
+     2) if we have same method names in parent and child class we can use the super keyword to access the parent class
+     method otherwise by default java refers to the child class
+     3) as constructors  don't participate in inheritance we can use super( ) to call the constructors from the parent class
+
+     RULES:
+    1)If we have a constructor in the parent class that takes two arguments we must have a constructor inside the child
+      class that at least takes those 2 arguments
+    2) we cant use this( ) and super () inside the same constructor
+    3) super cant  be used in static method
+
+
+  ============================
+  METHOD OVERLOADING IN JAVA
+  - if we have same methods in a class with
+  (1) different number of parameters   or
+  (2) different sequence of parameters or
+  (3) different datatype of parameters
+        it is called method overloading
+
+
+     ***   cannot overload a method by changing the return type from void to string for example ***
+
+
+        class calculator {
+
+        add ( int number, int number2)  {
+
+        }
+          add ( int number, double number2)  {
+
+                }
+        add ( double number, double number2)  {
+
+        }
+
+        add ( int number, int number2, int number3)  {
+
+                }
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

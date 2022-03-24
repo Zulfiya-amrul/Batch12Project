@@ -1,0 +1,11 @@
+
+INHERITANCE IN JAVA
+Process where one class acquires the attributes and methods of another class
+we need to add extends
+Car extends Vehicle
+
+This Keyword
+Rules:
+1) this ( ) should be the first line inside a constructor
+2) this ( ) cant be used inside methods.
+we can use this keyword in sysout too

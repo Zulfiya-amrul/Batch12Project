@@ -1,0 +1,66 @@
+Wrapper Classes in Java
+
+- provides a way to use primitive data type as refrence data types
+what is reference data types--
+another way of categorizing primitive vs non-primitive ( same as reference data type)
+----- dynamic in nature.
+----- dont have a fixed size
+----- most of them are considere as objects  have methods (ex string methods)
+----- example of refrence data types -- arrays, functions, collections
+----- class types, array types, interface types
+
+advantages ----
+-- may contain methods
+
+disadvantage
+slower to access, if we need to get value of prim inside wrapper it will take more
+time and codes
+
+
+autoboxing and unboxing in java
+--autoboxing--- automatic conversion that the java compiler makes between the prim
+and their corresponding object wrapper class
+
+ex.
+Boolean a = true;
+Character b = '@';
+Integer c = 123;
+Double d= 3.14;
+String e = "Bro"; --- already a reference data type
+
+a. --- will show you all the available methods
+boxing- converting primitive to wrapper class
+unboxing---- we can convert wrapper class to its primitive value
+
+example:
+if (a==true) {
+System.out.println("This is true");
+}
+----- class notes start here-------
+Collection Framework in java
+collection of calsses that help us manage and manipulate dta in a better way
+1) arraylist
+this class has many built in methods like add ( ) remove ( ) clear ( ) etc/
+2) dynamic and can adujst hteir size and run time
+
+ArrayList <> arrayLIst = new ArrayLIst <> ( );
+ArrayList name of the class
+inside diamond operator  < > we specify the type of data we want to store inside array
+
+why wrapper classes
+1) we get built in methods
+2) a lot of framewroks dont support primitives
+when do use primitives:
+1)when we care about the memory because primitives occupy 4 times less memory as compared to wrapper
+2) performance
+when to use wrapper
+when we care about our ease
+
+// double is a basic thing. Double is a bigger box.
+   Boxing is putting the double into Double
+   Unboxing is putting taking the double out of Double
+   Autoboxing is doing that automatically
+
+
+
+

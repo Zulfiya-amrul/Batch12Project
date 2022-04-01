@@ -38,10 +38,10 @@ System.out.println("This is true");
 }
 ----- class notes start here-------
 Collection Framework in java
-collection of calsses that help us manage and manipulate dta in a better way
+collection of classes that help us manage and manipulate dta in a better way
 1) arraylist
 this class has many built in methods like add ( ) remove ( ) clear ( ) etc/
-2) dynamic and can adujst hteir size and run time
+2) dynamic and can adjust their size and run time
 
 ArrayList <> arrayLIst = new ArrayLIst <> ( );
 ArrayList name of the class

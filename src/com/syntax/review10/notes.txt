@@ -1,0 +1,76 @@
+Inheritnace in Java;
+This is mechanism in Java through which one class can acquire the properties and methods from another class.
+The class from which we acuire the properties is called parent/superclass/baseclass and the class which acquire
+the properties and methods is called Child class/ derived class/ subclass
+
+Advantages:
+    1) Code duplication is reduced.
+    2)Saves Memory
+    3)Execution time is less
+
+Disadvantages:
+    1)Classes get tightly coupled. If we change something in the parent class it will affect all the children
+    classes and we have to make sure that this new changes is compatible with the code that we have in the children
+    classes.
+
+Whe we should use Inheritance:
+    1) If there is a case in which we would have to use the same methods in many different classes and the classes are
+    closely related to each other the best practice would be to create a parent class and use it to extend the methods
+    into the subclasses
+
+Types of Inheritance:
+We have four (4) types of Inheritance:
+    1)Single
+    2)Hierarchical
+    3)Multilevel
+    4)multiple
+
+Single Inheritance:
+In Single inheritance we have only one parent and only one child class.
+Class Animal{
+Stine name;
+String color;
+int age;
+double weight;
+}
+Hierarchical inheritance:
+In Hierarchical we have only one parent and many children classes.
+Class Animal{
+Stine name;
+String color;
+int age;
+double weight;
+}
+class Dog extends Animal{
+}
+class Cat extend Animal{
+}
+Multilevel inheritance:
+    If we have one parent and one child class and many intermediate classes it is called multilevel inheritance.
+    CEO-->Manager-->Assisst Manager--> Senior Employee-->Junior Employee
+    class Human{
+    String name;
+}
+class Employee extends Human{
+String employeeId;
+}
+class Teacher extends Employee{
+String subjects
+}
+Multiple Inheritance:
+In multiple inheritance we have a single child class and multiple parent classes: This is not supported in java with
+classes but possible with the help of interfaces.
+class Display{
+int resolution;
+}
+class keyboard{
+int noOfKeys;
+}
+class laptop extends Display, Keyboard{
+}
+Rules:
+    1) Private members are not inherited (private fields and private methods)
+    2) Constructors don't participate in inheritance
+    3) If we have constructor in the parent class we must have a matching constructor in the children classes as well.
+    4) in Java a subclass can only extend single parent class.
+

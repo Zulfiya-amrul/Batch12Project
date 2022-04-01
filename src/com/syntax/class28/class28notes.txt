@@ -1,0 +1,30 @@
+Wrapper Classes:
+They are obect types for all the primitive types. When we use the wrapper calsses we get all
+the benefits  of classes and objects for example we can have built in methods
+also generitcs works with only classes
+boxing in wrapper classes:
+---- boxing happens when a primitive to corresponding wrapper type.
+int num=10;
+Integer num2= new Integer (num) // boxing
+---- unboxing happens when we convert a wrapper object to a corresponding primitive type
+Integer num2= new Integer ( 10)
+int num = num2.intValue();
+
+
+Integer num =10; // autoBoxing
+int num2= num; // auto unboxing
+
+
+
+List (it is an interface in collections framework which is implemented by two classes )
+ArrayList class  and LinkedList
+common things in both classees
+1) we can store duplicate values in both
+2) the insertion order is maintained ( the order u put it in will come back in the same order)
+when to use ArrayList:
+if most of the operations are reading and storing new data and not shifting or changing
+the position of data we should go with array list
+when to use LinkedList
+when most of the operations are related to cahnging the position of data or related to data shifting then
+we should go with linked list-- score board, premire legue
+

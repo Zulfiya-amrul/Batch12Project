@@ -14,5 +14,38 @@ public class ArrayListDemo1 {
         System.out.println(number3);
 
 
+
+        ArrayList <Integer> numbers = new ArrayList<Integer>();
+        numbers.add (111);
+        numbers.add (222);
+        numbers.add (333);
+        numbers.add (444);
+        numbers.add (555);
+        numbers.add (666);
+
+        System.out.println(numbers.get(0));
+        System.out.println(numbers.get(2));
+        System.out.println(numbers.get(5));
+        System.out.println(numbers);
+        numbers.removeAll(numbers);
+        System.out.println(numbers);
+
+        ArrayList <String> greet = new  ArrayList <> ();
+
+        greet.add("hi");
+        greet.add("yo");
+        greet.add("sup");
+        greet.add("yolo");
+        greet.add("boop");
+        System.out.println(greet);
+        greet.remove(0);
+        System.out.println(greet);
+        greet.remove(1);
+        greet.remove(2);
+        System.out.println(greet);
+
+
+
+
     }
 }

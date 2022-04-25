@@ -19,7 +19,6 @@ public class Task5 {
    Car car= new Car();
    Pet pet= new Pet();
    Health health = new Health();
-
         ArrayList <String> classes= new ArrayList<>();
         classes.add(car.getQuote());
         classes.add(car.cancelInsurance());
@@ -28,7 +27,6 @@ public class Task5 {
         classes.add(health.getQuote());
         classes.add(health.cancelInsurance());
         System.out.println(classes);
-
         for (String OneClass: classes) {
             System.out.println(OneClass);
         }

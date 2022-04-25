@@ -1,0 +1,57 @@
+Set in Java
+set is an interface in collections framework which is implemented in many classes for example
+HashSet class, LinkedHashSet, TreeSet
+- how to check which how many classes implement the interface -- control alt b ( maybe command option b for mac)
+
+Properties of Set:
+-All the Sets don't allow duplicates
+
+Special about HashSet:
+1)HashSet does not maintain the insertion order
+2) it is the fastest in all Sets-- use HashSet when you want fast retrieval of data-- HashSet is the go to unless in some cases
+can have one null value
+3) most widely used set
+
+
+LinkedHashSet
+1) maintains the insertion order
+2) slower tha HashSet but faster than TreeSet specially the insertions
+-- retrieval is slow
+
+TreeSet:
+1) sorts the data in natural order. for number in increasing order ( the speed is slow because of how much time it takes to put things in order
+2) it is the slowest when it comes to storing the data
+when we insert the data its slow because it compares new data to current data so it can sort it and place the date in specific order
+
+
+When to use each type of Set:
+1)if we don't care about insertion order and data being sorted always use ----HashSet
+2) if we need the insertion order we(Batch 12)  don't have much choice we have to use LinkedHashSet,
+3)but if we dont care about the insertion order we can compare it with TreeSet
+
+
+LinkedHashSet           vs              TreeSet
+insertion is not slow                      insertion is the slowest
+retrieval is the slowest                   retrieval is slower than hashset but faster than LinkedHashSet
+
+requirement example:
+i don't care about insertion but i care about retrieval speed, which set do you use?
+use HashSet
+i care about insertion but i dont care about retrieval speed, which set do you use?
+use linkedHashSet
+
+If I want to have sorted data all the time?
+Use TreeSet
+
+
+===============================================
+Maps in Java:
+- what is the benefit of attaching keys in Map class
+- we can give specific index to the value without wasting space
+- example is the SSN number
+
+-- we dont need to associate indexes for map interface
+-- why maps got so popular
+-- map has a special thing called HashFunction --the hash function  will go directly give you the element right away without searcing for it.
+it will give you direct address
+

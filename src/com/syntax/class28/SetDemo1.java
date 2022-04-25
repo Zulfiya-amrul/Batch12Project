@@ -4,6 +4,8 @@ import java.util.*;
 
 public class SetDemo1 {
     public static void main(String[] args) {
+        // set does not maintain insertion order
+        // set does not allow duplicates
         // no duplicates no insertion order
         HashSet <String> fruit = new HashSet<>();
         fruit.add("Apple");
@@ -13,7 +15,9 @@ public class SetDemo1 {
         fruit.add("Banana");
         fruit.add("Apple");
         System.out.println(fruit);
-        HashSet <Integer> numbers = new HashSet<>();
+
+
+       /* HashSet <Integer> numbers = new HashSet<>();
         numbers.add(111);
         numbers.add(111);
         numbers.add(111);
@@ -59,7 +63,7 @@ public class SetDemo1 {
         Iterator<Integer> syntaxnames = number.iterator ();
       while (syntaxnames.hasNext()) {
           System.out.println(syntaxnames.next());
-      }
+      }*/
 
     }
 

@@ -9,11 +9,15 @@
     // Remove any number that is divisible by 5 from that arrayList.
 
             ArrayList <Integer> evenNum = new ArrayList<>();
-            for ( int i =1; i <=500; i++ ){
-                if (i%2==0) {
-                    evenNum.add(i);
-                }
+            for ( int i =2; i <=500; i+=2 ){
+                evenNum.add(i);
+
             }
+            System.out.println(evenNum);
+            evenNum.removeIf(integer -> integer % 5 == 0);
+            System.out.println(evenNum);
+            /*
+            the way of doing this problem with iterator instead of lambda expression
             System.out.println(evenNum);
             Iterator <Integer> iterator = evenNum.iterator();
             while (iterator.hasNext()){
@@ -21,7 +25,7 @@
                     iterator.remove();
                 }
             }
-            System.out.println(evenNum);
+             */
 
         }
     }

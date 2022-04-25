@@ -11,7 +11,7 @@ public class Task9 {
      Then remove any city that starts with “A”;
          */
 
-        Set<String> cities= new LinkedHashSet<>();
+        LinkedHashSet<String> cities= new LinkedHashSet<>();
         cities.add("Boise");
         cities.add("Phoenix");
         cities.add("Arrowhead");
@@ -27,8 +27,8 @@ public class Task9 {
                 iterator.remove();
             }
         }
+        // do same thing using labda method
+        //cities.removeIf((s-> s.startsWith("A")));
         System.out.println(cities);
-
-
     }
 }

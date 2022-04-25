@@ -22,6 +22,6 @@ public class IteratorDemo4 {
         }
         System.out.println(courses);
     }
-// when you are doing any operation on list that can change its size use operator
+// when you are doing any operation on list that can change its size use iterator (add remove then)
     // otherwise use loops
 }

@@ -24,7 +24,7 @@ we create classes and inside those classes we create private fields and methods
 these methods are called getter setter methods and set and get the values of the class fields
 with the help of these methods instead o accessing and modifying them directly
 
-eclipse vs intelij
+eclipse vs intellij
 workspace vs project
 project vs module
 

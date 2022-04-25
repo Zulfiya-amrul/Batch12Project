@@ -1,7 +1,7 @@
 Wrapper Classes:
-They are obect types for all the primitive types. When we use the wrapper calsses we get all
+They are object types for all the primitive types. When we use the wrapper calsses we get all
 the benefits  of classes and objects for example we can have built in methods
-also generitcs works with only classes
+also generics works with only classes
 boxing in wrapper classes:
 ---- boxing happens when a primitive to corresponding wrapper type.
 int num=10;
@@ -18,7 +18,7 @@ int num2= num; // auto unboxing
 
 List (it is an interface in collections framework which is implemented by two classes )
 ArrayList class  and LinkedList
-common things in both classees
+common things in both classes
 1) we can store duplicate values in both
 2) the insertion order is maintained ( the order u put it in will come back in the same order)
 when to use ArrayList:

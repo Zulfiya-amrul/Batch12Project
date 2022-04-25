@@ -12,13 +12,20 @@ public class IteratorDemo2 {
         courses.add("java");
         courses.add("git");
         courses.add("selenium");
-        Iterator <String> interator =courses.iterator();
-        System.out.println(interator.hasNext());
+        Iterator <String> iterator =courses.iterator(); // iterator is an interface
+        // all of the classes of collection framework have implement the iterator interface
+        System.out.println(iterator.hasNext()); // returns true or false
+        System.out.println(iterator.next());
+        System.out.println(iterator.hasNext());
+        System.out.println(iterator.next());
+        System.out.println(iterator.hasNext());
+        System.out.println(iterator.next());
+        System.out.println(iterator.hasNext());
+        System.out.println(iterator.next());
+        System.out.println(iterator.hasNext());
+        System.out.println(iterator.next());
+        System.out.println(iterator.hasNext());
+        // if you try to ask for the next at this point you will get no such element exception
 
-        System.out.println(interator.hasNext());
-        System.out.println(interator.hasNext());
-        System.out.println(interator.hasNext());
-        System.out.println(interator.hasNext());
-        System.out.println(interator.hasNext());
     }
 }

@@ -1,0 +1,6 @@
+generic programs
+the program that can work with any type of data they are not hardcodded
+for certain type
+
+when to use arrays
+when we have more than 3 variables of same data types and they hold logically same date type

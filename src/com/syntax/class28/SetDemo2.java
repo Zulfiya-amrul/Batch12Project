@@ -12,5 +12,8 @@ public class SetDemo2 {
         fruit.add("Banana");
         fruit.add("Apple");
         System.out.println(fruit);
+        // LinkedHashSet - maintains the insertion oder, and still removes the duplicates
+        // simple HashSet -- no duplicates, no insertion order is maintained
+
     }
 }
